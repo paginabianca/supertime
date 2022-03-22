@@ -23,7 +23,7 @@ if [ ! -e ${FILE} ]; then
     echo "User Time,System Time,CPU,Total Time,Command/File,Exit Code,Commit;" > $FILE
 fi
 
-if [ -z "$1" ]; then
+if [ -z "$@" ]; then
     echo "First argument has to be file to be executed."
     exit 1
 fi
