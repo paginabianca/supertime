@@ -7,7 +7,7 @@
 set -eou pipefail
 
 FILE=~/.local/share/supertime/supertime.csv
-TIME_ARGS='-f %U,%S,%P,%E,%C,%x --'
+TIME_ARGS='-f%U,%S,%P,%E,%C,%x'
 HASH=""
 
 if [ ! -d ~/.cache/supertime ]; then
